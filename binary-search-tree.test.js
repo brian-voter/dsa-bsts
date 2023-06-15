@@ -465,7 +465,13 @@ describe("findSuccessorNode", function () {
   });
 });
 
-describe("remove", function () {
+describe("findNodeAndParent", function () {
+  it("finds a node and its parent", function () {
+    console.log(largeBST.root.findNodeAndParentRecursively(15));
+  });
+});
+
+describe.only("remove", function () {
   it("removes a root node with no children", function () {
     emptyBST.insert(10);
     emptyBST.remove(10);
